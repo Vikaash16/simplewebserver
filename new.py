@@ -1,21 +1,3 @@
-# ex1 Developing a Simple Webserver
-## AIM:
-To develop a simple webserver to serve html pages.
-
-## DESIGN STEPS:
-### Step 1: 
-HTML content creation
-### Step 2:
-Design of webserver workflow
-### Step 3:
-Implementation using Python code
-### Step 4:
-Serving the HTML pages.
-### Step 5:
-Testing the webserver
-
-## PROGRAM:
-...
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content='''
@@ -29,6 +11,8 @@ content='''
 <h2>1.Django</h2>
 <h2>2. MEAN Stack</h2>
 <h2>3. React </h2>
+<h2>3. Spring Framework </h2>
+<h2>3. MEAN </h2>
 </body>
 </html>
 '''
@@ -44,14 +28,4 @@ class MyServer(BaseHTTPRequestHandler):
 print("This is my webserver") 
 server_address =('',80)
 httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()
-...
-
-
-## OUTPUT:
-![OUTPUT](./theiawebserver.png)
-![OUTPUT](./webserver.png)
-
-
-## RESULT:
-The program for implementing simple webserver is executed successfully.
+httpd.serve_forever()python3 new.
